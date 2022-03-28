@@ -9,12 +9,12 @@ import Footer from "./Footer";
 function App() {
   
   const [data, setData] = useState([])
-  const api = config.api.KEY
+  const API_KEY = config.api.KEY
   const [showMore, setShow] = useState(false)
 
 
    useEffect(() => {
-    fetch("https://api.nasa.gov/planetary/apod?api_key="+ api+ "&count=6&thumbs=true")
+    fetch("https://api.nasa.gov/planetary/apod?api_key="+ API_KEY+ "&count=6&thumbs=true")
       .then(res => res.json())
       .then(data => {
         setData(data)
