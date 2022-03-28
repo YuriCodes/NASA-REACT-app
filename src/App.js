@@ -2,14 +2,13 @@ import React, {useEffect, useState} from "react";
 import './App.css';
 import Header from './Header';
 import Card from './Card';
-import config from "./config";
 import Footer from "./Footer";
-
+require('dotenv').config()
 
 function App() {
   
   const [data, setData] = useState([])
-  const API_KEY = config.api.KEY
+  const API_KEY = process.env.REACT_APP_API_VARIABLE
   const [showMore, setShow] = useState(false)
 
 
