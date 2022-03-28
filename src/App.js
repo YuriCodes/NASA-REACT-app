@@ -13,7 +13,7 @@ function App() {
 
 
    useEffect(() => {
-    fetch("https://api.nasa.gov/planetary/apod?api_key="+ API_KEY+ "&count=6&thumbs=true")
+    fetch("https://api.nasa.gov/planetary/apod?api_key="+API_KEY+"&count=6&thumbs=true")
       .then(res => res.json())
       .then(data => {
         setData(data)
