@@ -1,5 +1,7 @@
 # Live Version 
 https://nasaphothoarchiveapp.netlify.app/
+![Screenshot (248)](https://user-images.githubusercontent.com/80093500/160327316-dcdc3a74-f1cc-4e68-a8ef-ea9d62bef98f.png)
+
 
 # Getting Started with Create React App
 
