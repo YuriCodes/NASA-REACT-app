@@ -1,0 +1,124 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Helvetica, sans-serif; 
+  background-color: rgba(0, 0, 0, 0.103);
+  font-family: 'Inconsolata', monospace;
+}
+
+.nasa-logo{
+  width: 17vw;
+  height: 20vh;
+}
+.App {
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(255, 253, 253, 0.3);
+}
+
+.Header-txt{
+  padding: 10px;
+  font-size: 2em;
+}
+
+.Title-of-card{
+  padding: 20px;
+  font-size: 1.6em;
+  color: #0B3D91;
+}
+
+.Card-Component{
+  min-width: 80vw;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Img-description{
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.Img-description:hover{
+  cursor: pointer;
+}
+
+.Img-description, .Img-date, .Img-copyright{
+  width: 45vw;
+  margin: 0 auto;
+  padding: 15px;
+}
+.Img-copyright{
+  color: #14045c;
+}
+.Img-Date{
+  font-size: 1em;
+  font-weight: 400;
+}
+.Card-img{
+  width: 40vw;
+}
+
+.footer-section{
+padding: 20px;
+}
+
+.footer-btn{
+  box-shadow: 0 0 10px 0 rgba(77, 75, 75, 0.3);
+  border-color: transparent;
+ font-family: 'Inconsolata', monospace;
+ font-size: 1.5em;
+ padding: 12px;
+ margin-bottom: 15px;
+}
+
+.footer-btn:hover{
+  box-shadow: 0 0 10px 0 rgba(17, 33, 175, 0.582);
+  cursor: pointer;
+}
+.footer-txt1{
+  color: #0B3D91;
+  padding: 20px;
+}
+
+.footer-txt1 a{
+  text-decoration: none;
+  color: #0B3D91;
+}
+
+.footer-txt2 a{
+  text-decoration: none;
+  color: #000;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+@media screen and (max-width: 600px) {
+  .Card-Component{
+    min-width: 90vw;
+    display: block;
+  }
+  .Card-img{
+    width: 75vw;
+  }
+  .nasa-logo{
+    height: 10vh;
+  }
+  .Img-description{
+    width: 80vw;
+  }
+}
