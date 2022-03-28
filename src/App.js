@@ -8,12 +8,11 @@ require('dotenv').config()
 function App() {
   
   const [data, setData] = useState([])
-  const API_KEY = process.env.REACT_APP_API_VARIABLE
   const [showMore, setShow] = useState(false)
 
 
    useEffect(() => {
-    fetch("https://api.nasa.gov/planetary/apod?api_key="+API_KEY+"&count=6&thumbs=true")
+    fetch("https://api.nasa.gov/planetary/apod?api_key="+process.env.REACT_APP_API_VARIABLE+"&count=6&thumbs=true")
       .then(res => res.json())
       .then(data => {
         setData(data)
